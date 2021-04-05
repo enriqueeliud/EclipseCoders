@@ -1,2 +1,6 @@
-Django 
-pip
+Django==3.1.2
+pip==21.0.1
+django-heroku==0.3.1
+gunicorn==19.7.1
+psycopg2==2.7.3.2
+pytz==2017.3
