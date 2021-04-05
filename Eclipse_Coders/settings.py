@@ -34,7 +34,7 @@ SECRET_KEY = 'qq=aeg5=!6+puu+#^xp%nup1cyn0sf9@b3dugkus^anq9!(6wf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://eclipsecoders.herokuapp.com/','localhost','127.0.0.1']
 
 
 # Application definition
