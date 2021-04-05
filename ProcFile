@@ -1,1 +1,1 @@
-web:gunicorn eclipsecoders.wsgi --log-file -
+web: gunicorn Eclipse_Coders.wsgi:application --log-file -
