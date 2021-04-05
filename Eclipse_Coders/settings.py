@@ -31,12 +31,14 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'qq=aeg5=!6+puu+#^xp%nup1cyn0sf9@b3dugkus^anq9!(6wf'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'qq=aeg5=!6+puu+#^xp%nup1cyn0sf9@b3dugkus^anq9!(6wf')
+SECRET_KEY = 'qq=aeg5=!6+puu+#^xp%nup1cyn0sf9@b3dugkus^anq9!(6wf'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = 'False'
+
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -97,10 +99,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-    
-   
-    
-    
 }
 
 
