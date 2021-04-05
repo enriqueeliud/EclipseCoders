@@ -1,1 +1,1 @@
-web: gunicorn Eclipse_Coders.wsgi --log-file - --bind 0.0.0.0:$PORT-
+web: python Eclipse_Coders/manage.py runserver 0.0.0.0:$PORT
