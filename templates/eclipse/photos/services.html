@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Enrique_Photos &mdash; Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/fonts/icomoon/style.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/photos/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/photos/css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/photos/css/jquery-ui.css' %}">
+<link rel="stylesheet" href="{% static 'css/photos/css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/photos/css/owl.theme.default.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/photos/css/lightgallery.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/photos/css/bootstrap-datepicker.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/fonts/flaticon/font/flaticon.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/photos/css/swiper.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/photos/css/aos.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/photos/css/style.css' %}">
+
+
+</head>
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+
+
+
+    <header class="site-navbar py-3" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2" data-aos="fade-down">
+            <h1 class="mb-0"><a href="{% url 'home' %}" class="text-white h2 mb-0">Enrique</a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="has-children">
+                  <a href="{% url 'photos' %}">Gallery</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Portrait</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li class="has-children">
+                      <a href="#">Sub Menu</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="active"><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+            <div class="d-none d-xl-inline-block">
+              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+                <li>
+                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-youtube-play"></span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+
+
+    <div class="site-section"  data-aos="fade">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-7">
+            <div class="row mb-5">
+              <div class="col-12 ">
+                <h2 class="site-section-heading text-center">My Services</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
+            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
+              <span class="icon flaticon-camera display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4">Camera</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
+              <p><strong class="font-weight-bold text-primary">$29</strong></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
+            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
+              <span class="icon flaticon-picture display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4">Wedding Photography</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
+              <p><strong class="font-weight-bold text-primary">$46</strong></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
+            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
+              <span class="icon flaticon-sheep display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4">Animal</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
+              <p><strong class="font-weight-bold text-primary">$24</strong></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
+            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
+              <span class="icon flaticon-frame display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4">Portrait</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
+              <p><strong class="font-weight-bold text-primary">$40</strong></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
+            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
+              <span class="icon flaticon-eiffel-tower display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4">Travel</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
+              <p><strong class="font-weight-bold text-primary">$35</strong></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
+            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
+              <span class="icon flaticon-video-play display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4">Video Editing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
+              <p><strong class="font-weight-bold text-primary">$15</strong></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    
+  </div>
+
+<script src="{% static 'js/photos/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/photos/js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/photos/js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/photos/js/popper.min.js' %}"></script>
+<script src="{% static 'js/photos/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/photos/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/photos/js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/photos/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/photos/js/jquery.magnific-popup.min.j' %}"></script>
+<script src="{% static 'js/photos/js/bootstrap-datepicker.min.j' %}"></script>
+<script src="{% static 'js/photos/js/swiper.min.js' %}"></script>
+<script src="{% static 'js/photos/js/aos.js' %}"></script>
+
+<script src="{% static 'js/photos/js/picturefill.min.js' %}"></script>
+<script src="{% static 'js/photos/js/lightgallery-all.min.js' %}"></script>
+<script src="{% static 'js/photos/js/jquery.mousewheel.min.js' %}"></script>
+
+<script src="{% static 'js/photos/js/main.js' %}"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+
+</body>
+</html>

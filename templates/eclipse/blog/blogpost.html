@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/blog/style.css' %}">
+  
+<title>Eclipse_Coders</title>
+</head>
+
+<body>
+  <div id="slideout-menu">
+       <ul>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'projects' %}">Projects</a>
+            </li>
+            <li>
+                <a href="{% url 'articles' %}">Articles</a>
+            </li>
+            <li>
+                <a href="{% url 'about' %}">About</a>
+            </li>
+            <li>
+                <input type="text" placeholder="Search Here">
+            </li>
+        </ul>
+  </div>
+
+  <nav>
+      <div id="logo-img">
+          <a href="#">
+             <img src="{% static 'images/blog/img/logo.png' %}"alt="computer">
+          </a>
+      </div>
+      <div id="menu-icon">
+          <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+          <li>
+              <a href="{% url 'home' %}">Home</a>
+          </li>
+          <li>
+              <a class="active" href="{% url 'articles' %}">Articles</a>
+          </li>
+          <li>
+              <a href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li>
+              <a href="{% url 'about' %}">About</a>
+          </li>
+          <li>
+              <div id="search-icon">
+                  <i class="fas fa-search"></i>
+              </div>
+          </li>
+      </ul>
+  </nav>
+
+  <div id="searchbox">
+      <input type="text" placeholder="Search Here">
+  </div>
+
+  <main>
+
+    <h2 class="page-heading">Machine Learning</h2>
+    <div id="post-container">
+      <section id="blogpost">
+        <div class="card">
+          <div class="card-meta-blogpost">
+            Posted by Admin on 01/01/2018 in
+            <a href="#">Web Dev</a>
+          </div>
+          <div class="card-image">
+           <img src="{% static 'images/blog/img/1.jpg' %}" alt="Card Image">
+          </div>
+          <div class="card-description">
+            <h3>Introduction</h3>
+            <p>Machine learning (ML) is the study of computer algorithms that improve automatically through experience.[1] It is seen
+            as a subset of artificial intelligence. Machine learning algorithms build a model based on sample data, known as
+            "training data", in order to make predictions or decisions without being explicitly programmed to do so.[2] Machine
+            learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is
+            difficult or unfeasible to develop conventional algorithms to perform the needed tasks.
+            
+            A subset of machine learning is closely related to computational statistics, which focuses on making predictions using
+            computers; but not all machine learning is statistical learning. The study of mathematical optimization delivers
+            methods, theory and application domains to the field of machine learning. Data mining is a related field of study,
+            focusing on exploratory data analysis through unsupervised learning.[4][5] In its application across business problems,
+            machine learning is also referred to as predictive analytics.</p>
+          </div>
+        </div>
+
+        <div id="comments-section">
+          Comments Section
+        </div>
+      </section>
+
+    <aside id="sidebar">
+        <h3>Sidebar Heading</h3>
+        <p>Sidebar 1</p>
+    </aside>
+    </div>
+
+<main class="cd-main-content">
+   <nav class="cd-side-nav js-cd-side-nav">
+      <ul class="cd-side__list js-cd-side__list">
+         <li class="cd-side__label"><span>Main</span></li>
+         <li class="cd-side__item cd-side__item--has-children cd-side__item--overview js-cd-item--has-children">
+            <a href="#0">Overview</a>
+          
+            <ul class="cd-side__sub-list">
+               <li class="cd-side__sub-item"><a href="#0">All Data</a></li>
+               <!-- other list items here -->
+            </ul>
+        </li>
+
+        <li class="cd-side__item cd-side__item--has-children cd-side__item--notifications cd-side__item--selected js-cd-item--has-children">
+            <a href="#0">Notifications<span class="cd-count">3</span></a>
+          
+            <ul class="cd-side__sub-list">
+               <li class="cd-side__sub-item"><a href="#0">All Notifications</a></li>
+               <!-- other list items here -->
+            </ul>
+        </li>
+    
+        <!-- other list items here -->
+      </ul>
+    
+      <!-- other unordered lists here -->
+    </nav>
+
+   <div class="cd-content-wrapper">
+      <!-- main content here -->
+   </div> <!-- .cd-content-wrapper -->
+</main> <!-- .cd-main-content -->
+      </aside>
+    </div>
+
+    <footer>
+        <div id="left-footer">
+            <h3>Quick Links</h3>
+            <p>
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about'  %}">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'services' %}">services</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'articles' %}">Articles</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'projects' %}">Projects</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="right-footer">
+            <h3>Follow me on</h3>
+            <div id="social-media-footer">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>This website is developed by Elithecompguru</p>
+        </div>
+    </footer>
+
+  </main>
+
+  <script src="{% static 'js/blog/main.js' %}"></script>
+
+
+  
+</body>
+
+</html>

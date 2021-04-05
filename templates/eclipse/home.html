@@ -1,0 +1,193 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elithecompguru</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/fonts/icomoon/style.css' %}">-
+
+    <link rel="stylesheet" href="{% static 'css/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/fancybox.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/style.css' %}">
+
+    <style>
+  .banner {
+            background-image: url("{% static 'images/images/web.webp' %}");
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            top: 100px;
+            
+        }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+  
+  <div class="site-wrap">
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+    <div class="site-logo">
+      <a href="{% url 'home' %}">Enrique Eliud</a>
+    </div>
+    
+    <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+    <div class="main-menu">
+      <ul class="js-clone-nav">
+        <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+         <li><a href="{% url 'learning' %}" class="nav-link">Courses</a></li>
+        <li><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+        <li><a href="#section-contact" class="nav-link">Contact</a></li>
+         <li><a href="{% url 'about' %}" class="nav-link">About</a></li>
+         <li><a href="{% url 'services' %}" class="nav-link">Services</a></li>
+         <li><a href="{% url 'portifolio' %}" class="nav-link">Portifolio</a></li>
+        
+      </ul>
+      <ul class="social js-clone-nav">
+        <li><a href="#"><span class="icon-facebook"></span></a></li>
+        <li><a href="#"><span class="icon-twitter"></span></a></li>
+        <li><a href="#"><span class="icon-instagram"></span></a></li>
+        <li><a href="#"><span class="icon-github"></span></a></li>
+        <li><a href="#"><span class="icon-reddit"></span></a></li>
+        
+      </ul>
+     
+    </div>
+     <h4><ul><strong><i>Upcoming Events</ul></i></strong>
+      <ul>
+        <li><a href="#">ihub reactathon meetup on 22-12-2020</a></li>
+         <li><a href="#">Software develper talk on 22-12-2020 by James Bond</a></li>
+         <li><a href="#">Kid introduction to programming by Halsey Morgan</a></li>
+         <li><a href="#">Launching of the Kedulo robot projects</a></li>
+         <li><a href="#">Celebrating proffessor Kim for global award winning in machine learning</a></li>
+         <li><a href="#">Student interschool hackathon registration</a></li>
+      </ul>
+  </header> 
+
+  
+
+  <main class="main-content">
+    <div class="banner">
+
+    <section class="site-section-hero bg-image"
+    data-stellar-background-ratio="0.5"  id="section-home">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-7 text-center">
+            <h1 class="text-white heading text-uppercase" data-aos="fade-up">Welcome</h1>
+            <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="100">Hi there.My name is Eliud.I am a web developer.Join me in  my journey and explore the world of website development.Always keep an open mind</p>
+            <p data-aos="fade-up" data-aos-delay="100"><a href="#section-contact" class="btn btn-primary btn-md smoothscroll">Contact Me</a></p>
+          </div>
+        </div>
+      </section>
+      </div>
+      
+    <div class="container-fluid">
+
+      <section class="site-section darken-bg" id="section-contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h2 class="text-white mb-5 heading">Contact</h2>
+
+              <form action="{% url 'email' %}">
+ 
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-white" for="fname">First Name</label>
+                        <input type="text" id="fname" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-white" for="lname">Last Name</label>
+                        <input type="text" id="lname" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      
+                      <div class="col-md-12">
+                        <label class="text-white" for="email">Email</label> 
+                        <input type="email" id="email" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      
+                      <div class="col-md-12">
+                        <label class="text-white" for="subject">Subject</label> 
+                        <input type="subject" id="subject" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="row form-group mb-5">
+                      <div class="col-md-12">
+                        <label class="text-white" for="message">Message</label> 
+                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                      </div>
+                    </div>
+
+        
+                  </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    </div>
+  </main>
+
+</div> <!-- .site-wrap -->
+
+  <script src="{% static 'js/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/js/popper.min.js' %}"></script>
+  <script src="{% static 'js/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'js/js/aos.js' %}"></script>
+  
+
+  <script src="{% static 'js/js/jquery.fancybox.min.js' %}"></script>
+
+  <script src="{% static 'js/js/main.js' %}"></script>
+    
+  </body>
+</html>

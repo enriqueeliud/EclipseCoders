@@ -1,0 +1,38 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+
+ <div id="content" name="content" class="main">
+        <div class="row justify-content-center">
+            <div class="col-8">
+               
+                <h1 class="mt-2">Java Programming</h1>
+            
+                <hr class="mt-0 mb-4">
+
+            </div>
+        </div>
+    </div>
+
+<div class="sidenav">
+     <a href="{% url 'courses' %}">Back</a>
+    <a href="/">Home</a>
+    <a href="/create">Introduction</a>
+    <a href="/2">Basics</a>
+    <a href="#">Variables</a>
+    <a href="{% url 'courseform' %}">Arrays</a>
+    <a href="#">Strings</a>
+    <a href="#">Classes</a>
+    <a href="#">Objects</a>
+    <a href="#">Functions</a>
+    <a href="#">Error Handling</a>
+    <a href="#">Networking</a>
+    <a href="#">WEb_DEv</a>
+    <a href="#">Frameworks</a>
+    <a href="#">Spring</a>
+    <a href="#">Maven</a>
+    <a href="#">Research</a>
+    <a href="#">JDK</a>
+</div>
+
+{% endblock %}

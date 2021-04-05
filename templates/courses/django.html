@@ -1,0 +1,38 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+
+
+<div id="content" name="content" class="main">
+ <div class="row justify-content-center">
+  <div class="col-8">
+
+   <h1 class="mt-2">Django web Development</h1>
+
+   <hr class="mt-0 mb-4">
+
+  </div>
+ </div>
+</div>
+
+<div class="sidenav">
+  <a href="{% url 'courses' %}">Back</a>
+ <a href="/">Home</a>
+ <a href="/create">Introduction</a>
+ <a href="/2">Basics</a>
+ <a href="/web">Html</a>
+ <a href="#">Css</a>
+ <a href="#">JavaScript</a>
+ <a href="#">jQuery</a>
+ <a href="#">frameworks</a>
+ <a href="#">Error Handling</a>
+ <a href="#">web Networking</a>
+ <a href="#">web apps</a>
+ <a href="#">php</a>
+ <a href="#">laravel</a>
+ <a href="#">scss</a>
+ <a href="#">appendix</a>
+ <a href="#">JDK</a>
+</div>
+
+{% endblock %}

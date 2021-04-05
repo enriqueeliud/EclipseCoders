@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create responsive Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/course.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="{% static 'images/logo.jpeg' %}" alt="">
+            </div>
+            <ul class="nav-area">
+               
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'java' %}">JAVA</a></li>
+                <li><a href="{% url 'web' %}">WEB</a></li>
+                <li><a href="{% url 'python' %}">PYTHON</a></li>
+                <li><a href="{% url 'django' %}">DJANGO</a></li>
+                <li><a href="{% url 'javascript' %}">JAVASCRIPT</a></li>
+                <li><a href="{% url 'about' %}">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="welcome-text">
+            <h1>
+                We are <span>Creaters</span></h1>
+            <a href="#">Sign up for upcoming webinar</a>
+        </div>
+
+        <style>
+            header {
+                background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                url("{% static 'images/comp.jpeg' %}");
+                height: 100vh;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                position: relative;
+            }
+        </style>
+
+    </header>
+
+</body>
+
+<body>
+
+
+</html>
